@@ -11,15 +11,17 @@ import {
 
 import { styles } from "../../../pages/Feed/styles";
 
+import ButtonIcons from "../../atoms/ButtonIcons";
+
 const PostOptions: React.FC = () => {
   return (
     <View style={styles.postOptions}>
       <View style={styles.postOptionsSide}>
-        <FavoriteIcon style={styles.postOptionsIcon} />
-        <CommentIcon style={styles.postOptionsIcon} />
-        <MessengerIcon style={styles.postOptionsIcon} />
+        <ButtonIcons icon={FavoriteIcon} />
+        <ButtonIcons icon={CommentIcon} />
+        <ButtonIcons icon={MessengerIcon} />
       </View>
-      <SaveIcon />
+      <ButtonIcons icon={SaveIcon} />
     </View>
   );
 };

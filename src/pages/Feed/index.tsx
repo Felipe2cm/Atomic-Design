@@ -2,6 +2,8 @@ import React from "react";
 
 import { View, Text, Image, FlatList } from "react-native";
 
+import { posts } from "../../utils/posts";
+
 import {
   MessengerIcon,
   CameraIcon,
@@ -46,7 +48,7 @@ export function Feed() {
         />
       </View>
 
-      <Posts />
+      <Posts data={posts} />
     </View>
   );
 }

@@ -1,9 +1,11 @@
 import React from "react";
 
-import { View, Image, Text } from "react-native";
+import { View } from "react-native";
 
 import { styles } from "../../../pages/Feed/styles";
 import PostAvatar from "../../atoms/PostAvatar";
+import PostUsername from "../../atoms/PostUsername";
+import PostLocation from "../../atoms/PostLocation";
 
 import { ProfileIcon } from "../../../global/styles/icons";
 
@@ -17,8 +19,8 @@ const PostHeader: React.FC<Props> = ({ username, location }) => {
     <View style={styles.postHeader}>
       <PostAvatar source={ProfileIcon} />
       <View>
-        <Text style={styles.postUsername}>{username}</Text>
-        <Text style={styles.postLocation}>{location}</Text>
+        <PostUsername value={username} />
+        <PostLocation value={location} />
       </View>
     </View>
   );

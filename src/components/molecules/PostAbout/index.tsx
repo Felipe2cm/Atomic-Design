@@ -1,6 +1,6 @@
 import React from "react";
 
-import { View, Text, Image, ImageProps } from "react-native";
+import { View, ImageProps } from "react-native";
 
 import { styles } from "../../../pages/Feed/styles";
 import PostLikes from "../../atoms/PostLike";

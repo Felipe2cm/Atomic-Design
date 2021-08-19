@@ -1,15 +1,18 @@
 import React from "react";
-import { View, FlatList, Image, Text } from "react-native";
+import { FlatList } from "react-native";
 
 import { styles } from "../../../pages/Feed/styles";
-import { posts } from "../../../utils/posts";
 
-import { Post } from "../../organisms/Post";
+import { Post, PostProps } from "../../organisms/Post";
 
-const Posts: React.FC = () => {
+type Props = {
+  data: PostProps[];
+};
+
+const Posts: React.FC<Props> = ({ data }) => {
   return (
     <FlatList
-      data={posts}
+      data={data}
       style={styles.posts}
       showsVerticalScrollIndicator={false}
       keyExtractor={(post) => post.id}
