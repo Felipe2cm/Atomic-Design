@@ -2,7 +2,7 @@ import React from "react";
 
 import { View } from "react-native";
 
-import { styles } from "../../../pages/Feed/styles";
+import { styles } from "./styles";
 import PostAvatar from "../../atoms/PostAvatar";
 import PostUsername from "../../atoms/PostUsername";
 import PostLocation from "../../atoms/PostLocation";

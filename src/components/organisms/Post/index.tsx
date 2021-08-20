@@ -1,7 +1,7 @@
 import React from "react";
 import { View, ImageProps } from "react-native";
 
-import { styles } from "../../../pages/Feed/styles";
+import { styles } from "./styles";
 
 import PostHeader from "../../molecules/PostHeader";
 import PostImage from "../../atoms/PostImage";
